@@ -1,0 +1,197 @@
+//EDFW Specfic Styles, etc
+
+//EDFW VARIABLES
+
+//Typography
+@largeFontSize:			@baseFontSize*1.1;
+@largeFontLineHeight:	@baseLineHeight*1.1;
+
+
+
+//Front Page
+
+.horizontal-ribbon {
+	background-color: @grayLightest;
+	-webkit-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.15),0px 0px 10px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.15),0px 0px 10px rgba(0, 0, 0, 0.15);
+	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.15),0px 0px 10px rgba(0, 0, 0, 0.15);
+	margin:25px 0; padding: 25px 0;
+}
+
+.horizontal-ribbon h1, 
+.horizontal-ribbon h2,
+.horizontal-ribbon h3,
+.horizontal-ribbon h4,
+.horizontal-ribbon h5,
+.horizontal-ribbon h6 {
+	margin: 0;
+}
+
+.horizontal-ribbon h4	{
+	color: @gray;
+}
+
+
+.front-content-slider {
+	width: 100%;
+	background-color: @purple;
+	padding: 3px 3px;
+}
+	
+.content-slider img {
+	width: 100%;
+}
+
+.billboard-menu {
+	padding: @baseLineHeight 0;
+}
+
+
+.home-content-A h2 {
+	//font-size: @largeFontSize;
+}
+
+.home-content-A p {
+	font-size: @largeFontSize;
+	line-height: @largeFontLineHeight;
+	margin-bottom: @baseLineHeight;
+}
+
+.home-content-B h2 {
+	font-size: 24px;
+	line-height: @baseLineHeight * 1.5;
+}
+
+.home-content-item-link .date {
+	font-weight: bold;
+}
+
+.home-event-description {
+	font-style: italic;
+}
+
+.home-social {
+	padding: 5px;
+	margin: 5px;
+}
+
+.home-social-blue {
+	background-color: @blue;
+}
+
+.home-social-green {
+	background-color: @green;
+}
+
+.home-social-purple {
+	background-color: @purple;
+}
+
+.home-social-orange {
+	background-color: @orange;
+}
+
+.home-social-yellow {
+	background-color: @yellow;
+}
+
+.home-social-red {
+	background-color: @red;
+}
+
+
+.footer-ribbon {
+	color: @grayLightest;
+	background-color: @gray;
+	-webkit-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.15),0px 0px 10px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.15),0px 0px 10px rgba(0, 0, 0, 0.15);
+	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.15),0px 0px 10px rgba(0, 0, 0, 0.15);
+	margin:25px 0 0 0; padding: @baseLineHeight 0 @baseLineHeight 0;
+}
+
+.footer-ribbon p {
+	margin-bottom: @baseLineHeight;
+	}
+
+.footer-title {
+	font-size: @baseFontSize*1.25;
+	}
+	
+.footer-ribbon .phone {
+	color: @yellow;
+	}
+
+.footer-ribbon .address {
+	color: @white;
+}
+
+.footer-ribbon .email {
+	color: @yellow;
+}
+
+.footer-ribbon .copyright {
+	}
+	
+.footer-shield {
+	height: 150px;
+	}
+
+
+#churchnews ul {
+	list-style: none;
+	margin-left: 0px;
+}
+	
+#churchnews li {
+	margin-bottom: 20px;
+}
+
+#churchnews h2 img {
+	display: none;
+}
+
+#wpadminbar {
+	display: none;
+}
+
+
+// Multi Post Pages
+
+.post-list .post {
+	padding-bottom: @baseLineHeight;
+	border-bottom: solid 1px @grayLightest;
+	margin-bottom: @baseLineHeight;
+}
+
+.post .page-header {
+	padding-bottom: 0px;
+	border-bottom: none;
+}
+
+.post-list h1 {
+	margin: 0;
+}
+
+h3.assistive-text {
+	display: none;
+}
+
+//Single Post Pages
+
+.single-post .page-header {
+	margin-top: 0px;
+}
+
+.post-byline {
+	margin-bottom: @baseLineHeight;
+	font-size: @baseFontSize - 2;
+    color: @grayLight;
+}
+
+
+// Share This Fixing
+.home-content-A .share-this-buttons,
+.home-content-B .share-this-buttons,
+.post-list .share-this-buttons {
+	display: none;
+}
