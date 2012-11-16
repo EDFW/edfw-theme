@@ -35,7 +35,7 @@ get_header(); ?>
 				<h3><a href="<?php echo get_custom_option( 'url_three' , '' ); ?>" ><?php echo get_custom_option( 'headline_three' , 'Our Beliefs' ); ?></a></h3>
 				<h4><?php echo get_custom_option( 'subtitle_three' , 'You might be surprised...' ); ?></h4>
 				<hr class="hr-white"/>
-				<h3><a href="<?php echo get_custom_option( 'url_four' , '' ); ?>" ><?php echo get_custom_option( 'headline_four' , 'Your Life' ); ?></a></h3>
+				<h3><a href="<?php echo get_custom_option( 'url_four' , '' ); ?>" target="_new" ><?php echo get_custom_option( 'headline_four' , 'Your Life' ); ?></a></h3>
 				<h4><?php echo get_custom_option( 'subtitle_four' , 'Live it more abundantly!' ); ?></h4>
 			</div>
 		</div>

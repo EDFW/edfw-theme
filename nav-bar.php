@@ -88,7 +88,7 @@
 							<li><a href="<?php echo get_custom_option('fb_url'); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_390_facebook.png" class="home-social home-social-red"/> Facebook</a></li>
 							<li><a href="<?php echo get_custom_option('youtube_url'); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_382_youtube.png" class="home-social home-social-orange"/> YouTube</a></li>
 							<li><a href="<?php echo get_custom_option('tw_url'); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_391_twitter_t.png" class="home-social home-social-yellow"/> Twitter</a></li>
-							<li><a href="<?php echo get_custom_option('pint_url'); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_360_pinterest.png" class="home-social home-social-green"/> Pinterest</a></li>
+							<li><a href="<?php echo get_custom_option('pinterest_url'); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_360_pinterest.png" class="home-social home-social-green"/> Pinterest</a></li>
 							<li><a href="<?php echo get_custom_option('rss_url'); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_397_rss.png" class="home-social home-social-blue"/> Subscribe via RSS</a></li>
 							<li><a href="<?php echo get_custom_option('contact_url'); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_399_e-mail.png" class="home-social home-social-purple"/> Contact Directly</a></li>
 						</ul>
