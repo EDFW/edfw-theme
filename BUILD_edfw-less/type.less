@@ -128,10 +128,13 @@ dd {
 dt {
   font-weight: bold;
   line-height: @baseLineHeight - 1; // fix jank Helvetica Neue font bug
+  margin-top: @baseLineHeight;
+  :first-child { margin-top: 0px; }
 }
 dd {
   margin-left: @baseLineHeight / 2;
 }
+
 // Horizontal layout (like forms)
 .dl-horizontal {
   dt {
