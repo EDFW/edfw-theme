@@ -13,7 +13,7 @@ get_header(); ?>
 <div class="container" id="header-image">
 	<div class="row" id="billboard-title">
 		<div class="span8 offset2">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/edfw-logos/edfw-770.png" width="100%" />
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/edfw-logos/episcopal-diocese-fort-worth-770.png" width="100%" />
 		</div>
 		<div class="span2">
 		</div>
