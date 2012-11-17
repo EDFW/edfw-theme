@@ -93,8 +93,10 @@
 							<li><a href="<?php echo get_custom_option('contact_url'); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_399_e-mail.png" class="home-social home-social-purple"/> Contact Directly</a></li>
 						</ul>
 					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+				</ul> <!-- /nav  menu -->
+			<?php include 'edfw-navbar-searchform.php'; ?>
+			</div> <!-- /nav-collapse -->
+			
+		</div> <!-- /container -->
+	</div> <!-- /navbar-inner -->
 </div> 
