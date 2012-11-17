@@ -17,6 +17,7 @@ get_header(); ?>
 				</header>
 			</div>
 			<div class="post-list">
+				<?php include 'edfw-big-searchform.php';?>
 			</div> <!-- post-list -->
 		</div> <!-- /main content column -->
 		<div class="span4"> <!-- sidebar column -->
