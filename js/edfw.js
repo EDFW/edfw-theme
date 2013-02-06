@@ -9,6 +9,11 @@ $(document).ready(function() {
 		// has no masthead: display the logo all the time
 		$('#nav-header-logo').html(edfw_logo);
 		$('#nav-header-logo').removeClass('hidden');
+		//check size, adjust logo if too small
+		// if (window.width < 1200) {
+		//		replace full logo with small logo
+		//	} else {show the full logo }
+		//	on resize, do that again.
 	} else {
 		//has a masthead - is either home or isn't
 		
