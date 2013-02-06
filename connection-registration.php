@@ -35,6 +35,15 @@ function my_connection_types() {
 			'to'	=>	'Relevant Posts',
 		)
 	) );
+	p2p_register_connection_type( array(
+		'name'	=>	'posts_in_publication',
+		'from'	=>	'publication',
+		'to'	=>	'post',
+		'admin_box'	=>	'from',
+		'title'	=>	array(
+			'from'	=>	'Included Posts',
+		)
+	) );
 }
 add_action( 'p2p_init', 'my_connection_types' );
 ?>
