@@ -19,7 +19,15 @@ get_header(); ?>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 						<div class="page-header">
-							<h1><?php the_title(); ?></h1>
+							<?php 
+								$header_img = get_stylesheet_directory() . '/images/edfw-headers/' . $post->post_name. '.png';
+								if ( file_exists($header_img) ) {
+									$header_img = get_stylesheet_directory_uri() . '/images/edfw-headers/' . $post->post_name. '.png';
+									?><img id="header-image" src="<?php echo $header_img; ?>" /><?php
+								} else {
+								?><h1><?php the_title(); ?></h1><?php
+								}
+							?>
 						</div>
 						<div>
 							<?php include 'post-image-gallery.php'; ?>
@@ -63,7 +71,16 @@ get_header(); ?>
 									</div> <!-- /post highlights --> 
 								</div> <!-- / post info and highlights column -->
 								<div class="span6"> <!-- post content -->
-									<?php the_content(); ?>
+									<div class="publication-description">
+									<?php 
+										$my_taxonomy = 'publication_name'; // set this to whatever your custom taxonomy is called
+										$terms = wp_get_post_terms( $post->ID, $my_taxonomy ); // this gets all the terms attached to the post for your custom taxonomy
+										echo term_description($terms[0]->term_id, $my_taxonomy); // this displays the description for the first term in the $terms array 
+									?>
+									</div> <!-- /.publication-description-->
+									<div class="publication-edition-content">
+										<?php the_content(); ?>
+									</div> <!-- /.publication-edition-content -->
 									<?php
 										// Find connected pages
 										$connected = new WP_Query( array(
@@ -75,13 +92,12 @@ get_header(); ?>
 										// Display connected pages
 										if ( $connected->have_posts() ) :
 											?>
-											<h3>Related pages:</h3>
-												<ul>
+											<div class="publication-edition-articles">
 												<?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
-													<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+													<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+													<?php the_excerpt(); ?>
 												<?php endwhile; ?>
-											</ul>
-
+											</div> <!-- /.publication-edition-articles -->
 											<?php 
 											// Prevent weirdness
 											wp_reset_postdata();
