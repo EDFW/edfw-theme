@@ -40,10 +40,11 @@ get_header(); ?>
 											$img_credit_url = thisismyurl_get_custom_media_field( $post_thumbnail_id, 'img_credit_url' );
 											$img_license = thisismyurl_get_custom_media_field( $post_thumbnail_id, 'img_license' );
 											$img_license_url = thisismyurl_get_custom_media_field( $post_thumbnail_id, 'img_license_url' );
-											
+											$img_src = wp_get_attachment_image_src( $post_thumbnail_id );
+											$img_src = $img_src[0];
 										?>
 										<div class="featured-image">
-											<?php the_post_thumbnail(); ?>
+											<img src="<?php echo $img_src; ?>" class="post-side-image"/>
 											<div class="image-credits post-byline">
 												<span class="img-credit">Image by <a href="<?php echo $img_credit_url; ?>"><?php echo $img_credit; ?></a></span><br/>
 												<span class="img-license"><a href="<?php echo $img_license_url; ?>"><?php echo $img_license; ?></a></span>
