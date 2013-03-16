@@ -1,6 +1,6 @@
 <?php
 /**
- * The Template for displaying all single posts.
+ * The Template for displaying all single group.
  *
  * @package WordPress
  * @subpackage Twenty_Eleven
@@ -14,14 +14,14 @@ get_header(); ?>
 			<div class="single-post">
 			<?php if ( have_posts() ) : ?>
 
-				<?php twentyeleven_content_nav( 'nav-above' ); ?>
-
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
+						<?php include 'edfw-featured-content-display.php'; ?>
 						<div class="page-header">
 							<h1><?php the_title(); ?></h1>
 						</div>
 						<div>
+							
 							<?php include 'post-image-gallery.php'; ?>
 							<div class="row"> <!-- post content below images -->
 								<div class="span5"> <!-- service schedule and about -->
@@ -39,6 +39,9 @@ get_header(); ?>
 										<?php } ?>
 								</div> <!-- / service schedule and about -->
 								<div class="span3"> <!-- contact and people -->
+									<div class="test">
+										<?php echo $secondary_img; ?>
+									</div>
 									<div class="group-contact">
 										<!--<?php echo get_post_meta($post->ID, 'physical-address-label', true); ?><br /> 
 										<?php echo get_post_meta($post->ID, 'physical-street-address', true) ?><br />
