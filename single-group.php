@@ -25,6 +25,7 @@ get_header(); ?>
 							<?php include 'post-image-gallery.php'; ?>
 							<div class="row"> <!-- post content below images -->
 								<div class="span5"> <!-- service schedule and about -->
+								<?php include 'edfw-group-map-display.php'; ?>
 								<div class="post-content">
 								<?php the_content();?>
 								</div>
