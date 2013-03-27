@@ -112,8 +112,8 @@ get_header(); ?>
 				<aside class="widget widget-text">
 					<h3 class="widget-title">About <?php echo $short_title; ?></h3>
 					<?php the_content(); ?>
-					<!-- <?php $edfw_post->display_featured_content(); ?> -->
-					<!-- <?php $edfw_post->display_secondary_content( true ); ?> -->
+					<!-- <?php $edfw_post->display_featured_visual(); ?> -->
+					<!-- <?php $edfw_post->display_secondary_visual( true ); ?> -->
 				</aside>
 			</div> <!-- /sidebar well -->
 			<?php

@@ -18,6 +18,8 @@ get_header(); ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
+						<?php $edfw_post = new EDFWPost( $post->ID );?>
+						<?php $edfw_post->display_featured_visual(); ?>
 						<div class="page-header">
 							<h1><?php the_title(); ?></h1>
 						</div>
@@ -25,6 +27,7 @@ get_header(); ?>
 							<?php include 'post-image-gallery.php'; ?>
 							<div class="row"> <!-- post content below images -->
 								<div class="span2"> <!-- post info and highlights column -->
+									<?php $edfw_post->display_secondary_visual( true ); ?>
 									<div class="post-byline">
 										<span class="post-author">Posted by <?php the_author_posts_link(); ?></span><br/>
 										<span class="post-date-time">on <?php the_time('F j, Y'); ?></span><br/>
