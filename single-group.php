@@ -23,7 +23,7 @@ get_header(); ?>
 		<div class="span8"> <!-- main content column -->
 			<div class="single-post">
 			
-						<?php include 'edfw-featured-content-display.php'; ?>
+						<!-- <?php include 'edfw-featured-content-display.php'; ?> -->
 						<div class="page-header">
 							<h1><?php the_title(); ?></h1>
 						</div>
@@ -112,6 +112,8 @@ get_header(); ?>
 				<aside class="widget widget-text">
 					<h3 class="widget-title">About <?php echo $short_title; ?></h3>
 					<?php the_content(); ?>
+					<!-- <?php $edfw_post->display_featured_content(); ?> -->
+					<!-- <?php $edfw_post->display_secondary_content( true ); ?> -->
 				</aside>
 			</div> <!-- /sidebar well -->
 			<?php
