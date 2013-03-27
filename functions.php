@@ -651,3 +651,4 @@ add_filter( 'body_class', 'twentyeleven_body_classes' );
 
 /** EDFW Additions */
 	include 'connection-registration.php';
+	include 'edfw-class-edfwpost.php';

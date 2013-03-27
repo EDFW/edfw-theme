@@ -12,6 +12,7 @@ get_header(); ?>
 	<?php if ( have_posts() ) : ?>
 	<?php /* Start the Loop */ ?>
 	<?php while ( have_posts() ) : the_post(); ?>
+	<?php $edfw_post = new EDFWPost( $post->ID ); ?>
 	<?php
 		$short_title = get_post_meta( $post->ID, 'short-name', TRUE );
 		if ( $short_title == '' ) {
