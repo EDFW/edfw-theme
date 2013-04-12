@@ -151,7 +151,15 @@ function twentyeleven_setup() {
 	// We'll be using post thumbnails for custom header images on posts and pages.
 	// We want them to be the size of the header image that we just defined
 	// Larger images will be auto-cropped to fit, smaller ones will be ignored. See header.php.
-	set_post_thumbnail_size( $custom_header_support['width'], $custom_header_support['height'], true );
+	//set_post_thumbnail_size( $custom_header_support['width'], $custom_header_support['height'], true );
+	
+	//EDFW  not using header images like that AT ALL
+	//set default image size for use in index pages
+	
+	//set_post_thumbnail_size( 175, 175, false );
+	
+	
+	
 
 	// Add Twenty Eleven's custom image sizes.
 	// Used for large feature (header) images.

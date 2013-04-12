@@ -30,16 +30,25 @@ get_header(); ?>
 			<div class="post-list">
 			<?php if ( have_posts() ) : ?>
 
-				<?php twentyeleven_content_nav( 'nav-above' ); ?>
-
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="post">
-						<div class="page-header">
-							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <small><?php the_category( ' | '); ?></small></h3>
-						</div>
-						<div>
-							<?php the_excerpt(); ?>
+						<div class="row">
+							<?php $content_class = "span8"; ?>
+							<?php if ( has_post_thumbnail() ) { ?>
+								<?php $content_class = "span6"; ?>
+								<div class="span2">
+									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thumbnail' ); ?></a>
+								</div>
+							<?php } ?>
+							<div class="<?php echo $content_class; ?>">
+								<div class="page-header">
+									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <small><?php the_category( ' | '); ?></small></h3>
+								</div>
+								<div>
+									<?php the_excerpt(); ?>
+								</div>
+							</div>
 						</div>
 					</div>
 				<?php endwhile; ?>
