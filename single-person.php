@@ -26,7 +26,6 @@ get_header(); ?>
 							<div class="row"> <!-- post content below images -->
 								<div class="span2"> <!-- post info and highlights column -->
 									<img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($the_post->ID) ); ?>" />
-									
 								</div> <!-- / post info and highlights column -->
 								<div class="span6"> <!-- post content -->
 									<?php the_content(); ?>

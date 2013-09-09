@@ -26,6 +26,13 @@ get_header(); ?>
 						<div>
 							<?php include 'post-image-gallery.php'; ?>
 							<div class="row"> <!-- post content below images -->
+								<?php
+								$content_type = wp_get_post_terms( $post->ID, 'content_type', array("fields" => "names")); 
+								if ( in_array( 'Resource', $content_type) ) {
+									$main_span = 'span8';
+								} else {
+									$main_span = 'span6';
+								?>
 								<div class="span2"> <!-- post info and highlights column -->
 									<?php $edfw_post->display_secondary_visual( true ); ?>
 									<div class="post-byline">
@@ -47,7 +54,8 @@ get_header(); ?>
 										?>
 									</div> <!-- /post highlights --> 
 								</div> <!-- / post info and highlights column -->
-								<div class="span6"> <!-- post content -->
+								<?php } //endif for "resources" ?> 
+								<div class="<?php echo $main_span;?>"> <!-- post content -->
 									<?php the_content(); ?>
 								</div> <!-- / post content -->
 							</div> <!-- / post content below images -->

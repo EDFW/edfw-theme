@@ -23,7 +23,7 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-
+<meta name="description" content="The Episcopal Diocese of Fort Worth">
 <meta name="author" content="The Episcopal Diocese of Fort Worth">
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
