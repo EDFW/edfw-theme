@@ -85,12 +85,13 @@
 							<b class="caret"></b>
 						</a>
 						<ul class="dropdown-menu">
+							<li><a href="<?php echo get_custom_option('contact_url'); ?>" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_399_e-mail.png" class="home-social home-social-gray"/> Contact</a></li>
 							<li><a href="<?php echo get_custom_option('fb_url'); ?>" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_390_facebook.png" class="home-social home-social-red"/> Facebook</a></li>
 							<li><a href="<?php echo get_custom_option('youtube_url'); ?>" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_382_youtube.png" class="home-social home-social-orange"/> YouTube</a></li>
 							<li><a href="<?php echo get_custom_option('tw_url'); ?>" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_391_twitter_t.png" class="home-social home-social-yellow"/> Twitter</a></li>
 							<li><a href="<?php echo get_custom_option('pinterest_url'); ?>" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_360_pinterest.png" class="home-social home-social-green"/> Pinterest</a></li>
 							<li><a href="<?php echo get_custom_option('subscribe_url'); ?>" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_397_rss.png" class="home-social home-social-blue"/> Subscribe</a></li>
-							<li><a href="<?php echo get_custom_option('contact_url'); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_399_e-mail.png" class="home-social home-social-purple"/> Contact Directly</a></li>
+							<li><a href="<?php echo get_custom_option('flickr_url'); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/glyphicons/glyphicons_395_flickr.png" class="home-social home-social-purple"/> Flickr</a></li>
 						</ul>
 					</li>
 				</ul> <!-- /nav  menu -->
